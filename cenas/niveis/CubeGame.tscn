@@ -22,20 +22,28 @@ transform = Transform3D(1, 0, 0, 0, 0.84663934, 0.5321672, 0, -0.5321672, 0.8466
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
+[node name="Reset" type="Button" parent="HUD"]
+offset_left = 1039.0
+offset_top = 600.0
+offset_right = 1137.0
+offset_bottom = 631.0
+text = "Reset"
+
 [node name="Button" type="Button" parent="HUD"]
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -116.0
-offset_top = -48.0
-offset_right = -17.0
-offset_bottom = -17.0
+offset_left = -115.0
+offset_top = -92.0
+offset_right = -16.0
+offset_bottom = -61.0
 grow_horizontal = 0
 grow_vertical = 0
 focus_mode = 0
 text = "Embaralhar"
 metadata/_edit_use_anchors_ = true
 
+[connection signal="pressed" from="HUD/Reset" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="HUD/Button" to="." method="_on_button_pressed"]
