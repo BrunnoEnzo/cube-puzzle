@@ -10,9 +10,9 @@ A cena principal (`CubeGame.tscn`) é organizada hierarquicamente para separar a
 * **Cubo (`cube`):** Nó pai que agrupa as 27 peças menores (cubies). É o ponto de referência para a rotação global do objeto.
 * **Pivô de Rotação (`PivoRotacao`):** Um nó auxiliar `Node3D` utilizado temporariamente para agrupar peças selecionadas e aplicar a interpolação de rotação (Tween) sem afetar a hierarquia global.
 * **Sistema de Câmera (`PivoCamera`):**
-    * Utiliza um `Node3D` como pivô para orbitar o centro da cena.
-    * Contém a `Camera3D` e uma `DirectionalLight3D` (acoplada à câmera para iluminar sempre o ponto de vista do jogador).
-    * Script `camera_orbit.gd` gerencia o input de rotação da câmera.
+	* Utiliza um `Node3D` como pivô para orbitar o centro da cena.
+	* Contém a `Camera3D` e uma `DirectionalLight3D` (acoplada à câmera para iluminar sempre o ponto de vista do jogador).
+	* Script `camera_orbit.gd` gerencia o input de rotação da câmera.
 * **Interface (`HUD` - CanvasLayer):** Camada de UI independente que renderiza elementos 2D (botões e textos) sobre o mundo 3D.
 
 ## Modelos e Materiais
